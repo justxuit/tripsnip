@@ -1,0 +1,22 @@
+body {
+  background-color: #f2f2f2;
+  font-family: sans-serif;
+}
+
+footer {
+  background-color: #333; /*dark-grey*/
+  font-size: 0.8em;
+  color: white;
+  width: 100%;
+  display: block;
+  position: fixed;
+  bottom: 0px;
+  text-align: center;
+  padding: 10px;
+  letter-spacing: 2px;
+  word-spacing: 4px;
+}
+
+a {
+  color: #cc66ff;
+}

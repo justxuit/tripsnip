@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="tripSnipModule">
+<head>
+	 <meta charset="utf-8">
+	 <link rel="stylesheet" type="text/css" href="css/reset.css">
+	 <link rel="stylesheet" type="text/css" href="css/main.css">
+	 <title>TripSnip</title>
+</head>
+
+<body>
+
+  <nav>
+    <a href=#/create>Create a Snippet</a> /
+    <a href=#/snips>My Snippets</a>
+  </nav>
+
+  <div id="view" ng-view="">
+  LOADING...
+  </div>
+
+	<footer>
+	<span>Created by: <a href="#/about">Donald</a> / <a href="#/about">Josh</a> / <a href="#/about">Sara</a> /	<a href="#/about">Xuan</a></span>
+	</footer>
+
+ <!--build:js js/main.min.js -->
+ <script src="js/lib/angular.min.js"></script>
+ <script src="js/lib/angular-route.min.js"></script>
+ <script src="js/routes.js"></script>
+ <script src="js/lib/jquery-1.11.1.js"></script>
+ <script src="js/scripts.js"></script>
+ <!-- endbuild -->
+</body>
+</html>
