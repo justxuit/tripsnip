@@ -1,10 +1,11 @@
 Your Snippets.
 
-<div class="snip">
-  <p>
-    Country: {{snippet.country}}
-    Native Name: {{snippet.native}}
-    Capital: {{snippet.capital}}
-    Population:
-  </p>
-</div>
+[logo here]
+
+<a href="#/create"><button type="button" id="start-btn">Create your own</button></a>
+
+
+<section>
+  <snip-creator ng-repeat="snippet in snippetData">
+  </snip-creator>
+</section>
