@@ -13,6 +13,10 @@ app.config(function($routeProvider){
     templateUrl: "../partials/snips.html",
   });
 
+  $routeProvider.when("/about", {
+    templateUrl: "../partials/about.html",
+  });
+
   $routeProvider.otherwise({
     templateUrl: "../partials/splash.html"
   });
