@@ -20,3 +20,7 @@ footer {
 a {
   color: #cc66ff;
 }
+
+.snip {
+  border: 4px solid black;
+}
