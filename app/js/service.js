@@ -2,7 +2,7 @@
 
 var app = angular.module('tripSnipModule');
 
-app.factory("snippetStorage", function(){
+app.factory("snippetStorage", function(){ //creates factory
   var storedObj = {};
 
   var snippetArray = [
@@ -28,14 +28,14 @@ app.factory("snippetStorage", function(){
       note: "No McDonald's here! What's the deal?!? :("
     }
   ];
-
+//puts the user's entry and API data into factory
   function setSnip(fullData){
     storedObj = fullData;
     snippetArray.push(storedObj);
     console.log(snippetArray);
   };
-
-  function getSnip(){
+//retrieves the entire array of snips from factory
+  function getSnip(){ 
     return snippetArray;
   };
 

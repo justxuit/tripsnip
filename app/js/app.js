@@ -5,6 +5,7 @@ var app = angular.module("tripSnipModule", ["ngRoute"]);
 //routes
 app.config(function($routeProvider){
 
+//allows create.html partial to appear in the ng-view in index.html.  Also attaches the controller to the create.html.
   $routeProvider.when("/create", {
     templateUrl: "../partials/create.html",
     controller: "snipCreatorCtrl"
