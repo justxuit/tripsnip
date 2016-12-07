@@ -21,7 +21,7 @@ app.controller("snipCreatorCtrl", function ($scope, $http, snippetStorage){
 					note: $scope.note
 				};
 				console.log(fullData);
-				
+
 				//send all data to the service factory
 				snippetStorage.setSnip(fullData);
 
