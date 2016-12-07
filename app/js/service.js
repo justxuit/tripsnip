@@ -4,7 +4,7 @@
 var app = angular.module('tripSnipModule');
 
 app.factory("snippetStorage", function(){
-  var snippetContent = {};
+  var storedObj = {};
 
   return {
     setSnip: function (userInput){
