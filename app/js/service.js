@@ -20,18 +20,18 @@ app.factory("snippetStorage", function(){
 
   var snippetArray = [
     {
-      "name": "Aruba",
-      "nativeName": "Aruba",
-      "capital": "Oranjestad",
-      "population": 107394,
-      "userText": "Aruba is cool. It's very warm here."
+      name: "Aruba",
+      nativeName: "Aruba",
+      capital: "Oranjestad",
+      population: 107394,
+      userText: "Aruba is cool. It's very warm here."
     },
     {
-      "name": "Belarus",
-      "nativeName": "Белару́сь",
-      "capital": "Minsk",
-      "population": 9485300,
-      "userText": "Much colder than Aruba. You'll probably need a jacket."
+      name: "Belarus",
+      nativeName: "Белару́сь",
+      capital: "Minsk",
+      population: 9485300,
+      userText: "Much colder than Aruba. You'll probably need a jacket."
     },
     {
       "name": "Cambodia",
