@@ -1,6 +1,7 @@
 body {
   background-color: #f2f2f2;
   font-family: sans-serif;
+  
 }
 
 footer {
@@ -22,5 +23,57 @@ a {
 }
 
 .snip {
-  border: 4px solid black;
+  border: 4px dotted green;
 }
+
+#snipform {
+  border: 4px dotted green;
+}
+#border {
+  border: 3px solid green;
+  width: 60%;
+  display: block;
+  margin: auto;
+  padding: 3em;
+}
+
+#createborder {
+  border: 3px solid green;
+  width: 4em;
+  display: block;
+  margin: auto;
+  padding: .25em;
+}
+
+#createborderTwo {
+  border: 3px solid green;
+  width: 25em;
+  display: block;
+  margin: auto;
+}
+
+#createborderThree {
+  border: 3px solid green;
+  width: 12em;
+  margin: auto;
+  display: block;
+  
+}
+
+#createborderFour {
+  border: 3px solid green;
+  width: 14em;
+  margin-left: 400px;
+  margin-right: 400px;
+}
+
+#createborderFive {
+  border: 3px solid green;
+  width: 2.6em;
+  display: block;
+  margin: auto;
+  padding: .25em;
+}
+
+
+
