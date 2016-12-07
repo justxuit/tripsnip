@@ -7,15 +7,15 @@ app.config(function($routeProvider){
 
   $routeProvider.when("/create", {
     templateUrl: "../partials/create.html",
-  });
-
-  $routeProvider.when("/snips", {
-    templateUrl: "../partials/snips.html",
     controller: "snipCreatorCtrl"
   });
 
+  $routeProvider.when("/snips", {
+    templateUrl: "../partials/snips.html", 
+  });
+
   $routeProvider.when("/about", {
-    templateUrl: "../partials/about.html",
+    templateUrl: "../partials/about.html"
   });
 
   $routeProvider.otherwise({

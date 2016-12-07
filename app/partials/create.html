@@ -5,10 +5,10 @@
 		<img src="http://placehold.it/400x200">
 	</div>
 
-	<form> <!--ng-submit="functionHere" (inside form tag)-->
+	<form> 
 		<div id="createborderThree">
 			<label for="country">Country:</label>
-			<input type = "text" ng-model="country"/>
+			<input type = "text" ng-model="countrySearch"/>
 		</div>
 
 		<div id="createborderFour">
@@ -16,7 +16,7 @@
 		</div>
 
 		<div id="createborderFive">
-			<input type = "submit" value="Snip!"/>
+			<button ng-click = "retrieveCountryData()">Snip!</button>
 		</div>
 	</form>
 
