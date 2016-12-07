@@ -7,16 +7,16 @@ app.factory("snippetStorage", function(){
   var storedObj = {};
 
   return {
-    setSnip: function (userInput){
-      console.log(userInput);
-      storedObj = userInput;
+    setSnip: function (fullData){
+      console.log(fullData);
+      storedObj = fullData;
     },
 
     getSnip: function (){
       console.log(storedObj);
       return storedObj;
-    };
-  }
+    }
+  };
 
   var snippetArray = [
     {
