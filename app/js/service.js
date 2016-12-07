@@ -1,22 +1,9 @@
 (function(){ //IIFE
 
-
 var app = angular.module('tripSnipModule');
 
 app.factory("snippetStorage", function(){
   var storedObj = {};
-
-  return {
-    setSnip: function (fullData){
-      console.log(fullData);
-      storedObj = fullData;
-    },
-
-    getSnip: function (){
-      console.log(storedObj);
-      return storedObj;
-    }
-  };
 
   var snippetArray = [
     {
@@ -42,7 +29,19 @@ app.factory("snippetStorage", function(){
     }
   ];
 
+  function setSnip(fullData){
+    storedObj = fullData;
+    snippetArray.push(storedObj);
+    console.log(snippetArray);
+  };
+
+  function getSnip(){
+    return snippetArray;
+  };
+
+  return {
+    setSnip:setSnip,
+    getSnip:getSnip
+  }
 });
-
-
 })(); //END IIFE
