@@ -21,34 +21,9 @@ app.config(function($routeProvider){
   $routeProvider.otherwise({
     templateUrl: "../partials/splash.html"
   });
-
+  
 });
 
-
-
-/*TEST*/
-app.controller("snipCreatorCtrl", function ($scope){
-  $scope.snippetData = [
-    {
-      country: "Spain",
-      nativeName: "Espana",
-      population: 2
-    },
-    {
-      country: "France",
-      nativeName: "France",
-      population: 10
-    }
-  ];
-});
-
-
-app.directive('snipCreator', function(){
-  return {
-    restrict: "E",
-    templateUrl: "../partials/snip-template.html"
-  };
-});
 
 
 })();
