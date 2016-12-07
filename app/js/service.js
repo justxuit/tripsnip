@@ -24,21 +24,21 @@ app.factory("snippetStorage", function(){
       nativeName: "Aruba",
       capital: "Oranjestad",
       population: 107394,
-      userText: "Aruba is cool. It's very warm here."
+      note: "Aruba is cool. It's very warm here."
     },
     {
       name: "Belarus",
       nativeName: "Белару́сь",
       capital: "Minsk",
       population: 9485300,
-      userText: "Much colder than Aruba. You'll probably need a jacket."
+      note: "Much colder than Aruba. You'll probably need a jacket."
     },
     {
       name: "Cambodia",
       nativeName: "Kâmpŭchéa",
       capital: "Phnom Penh",
       population: 15405157,
-      userText: "No McDonald's here! What's the deal?!? :("
+      note: "No McDonald's here! What's the deal?!? :("
     }
   ];
 
