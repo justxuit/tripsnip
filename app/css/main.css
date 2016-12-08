@@ -5,22 +5,68 @@ body {
 }
 
 footer {
-  background-color: #333; /*dark-grey*/
-  font-size: 0.8em;
-  color: white;
+  font-weight: bold;
+  background-color: #ccc; /*light-grey*/
+  font-size: 0.6em;
+  color: #333; /*dark-grey*/
   width: 100%;
   display: block;
   position: fixed;
   bottom: 0px;
   text-align: center;
-  padding: 10px;
+  padding: 6px;
   letter-spacing: 2px;
-  word-spacing: 4px;
+  word-spacing: 3px;
+  line-height: 125%;
 }
 
 a {
-  color: #cc66ff;
+  color: #3399ff;
 }
+
+#splash-container {
+  width: 60%;
+  display: block;
+  margin: 3% auto;
+}
+
+#splash-img {
+  display: block;
+  margin: 1% auto;
+  border-radius: 50px;
+}
+
+h1 {
+  font-size: 3em;
+  text-align: center;
+  margin: 2% auto;
+}
+
+#tagline {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+#splash-blurb {
+  width: 68%;
+  display: block;
+  margin: auto;
+  padding: 1em;
+  line-height: 120%;
+  font-size: 0.9em;
+}
+
+#splash-btn {
+  display: block;
+  padding: 1%;
+  margin: 2% auto;
+  border-radius: 10px;
+  font-size: 1.5em;
+}
+
+
+
+
 
 .snip {
   border: 4px dotted green;
