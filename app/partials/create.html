@@ -1,23 +1,15 @@
-<!--the div's purpose below is to create border around body-->
-	<div id="border">
-	<h1 id="createborder">TripSnip</h1>
-	<div id="createborderTwo">
-		<img src="http://placehold.it/400x200">
-	</div>
-
-	<form> 
-		<div id="createborderThree">
-			<label for="country">Country:</label>
-			<input type = "text" ng-model="countrySearch"/>
-		</div>
-
-		<div id="createborderFour">
-			<label for="note">Travel Note:</label><input type = "textarea" maxlength="650" ng-model="note"/>
-		</div>
-
-		<div id="createborderFive">
-			<button ng-click = "retrieveCountryData()">Snip!</button>
-		</div>
-	</form>
-
+<div id="top-wrapper">
+  <h1 id="snips-logo">TripSnip</h1>
+	<img src="http://placehold.it/300x100">
 </div>
+
+<form>
+	<div id="create-formwrapper">
+		<label for="country">Country:</label>
+		<input type = "text" ng-model="countrySearch"/>
+		<br/><br/>
+		<label for="note">Travel Note:</label><textarea maxlength="650" ng-model="note"/></textarea>
+
+		<button ng-click ="retrieveCountryData()" id="create-btn">Snip!</button>
+	</div>
+</form>
