@@ -1,76 +1,111 @@
 body {
   background-color: #f2f2f2;
   font-family: sans-serif;
-
 }
 
 footer {
-  background-color: #333; /*dark-grey*/
-  font-size: 0.8em;
-  color: white;
+  font-weight: bold;
+  background-color: #ccc; /*light-grey*/
+  font-size: 0.6em;
+  color: #333; /*dark-grey*/
   width: 100%;
   display: block;
   position: fixed;
   bottom: 0px;
   text-align: center;
-  padding: 10px;
+  padding: 6px;
   letter-spacing: 2px;
-  word-spacing: 4px;
+  word-spacing: 3px;
+  line-height: 125%;
 }
 
 a {
-  color: #cc66ff;
+  color: #3399ff;
 }
-
-.snip {
-  border: 4px dotted green;
-}
-
-#snipform {
-  border: 4px dotted green;
-}
-#border {
-  border: 3px solid green;
+/**/
+/**/
+/**/
+/**/
+/*///////START splash.html//////*/
+#splash-container {
   width: 60%;
   display: block;
-  margin: auto;
-  padding: 3em;
+  margin: 3% auto;
 }
 
-#createborder {
-  border: 3px solid green;
-  width: 4em;
+#splash-img {
+  display: block;
+  margin: 1% auto;
+  border-radius: 50px;
+}
+
+#splash-logo {
+  font-size: 3em;
+  text-align: center;
+  margin: 2% auto;
+}
+
+#tagline {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+#splash-blurb {
+  width: 68%;
   display: block;
   margin: auto;
-  padding: .25em;
+  padding: 1em;
+  line-height: 120%;
+  font-size: 0.9em;
 }
 
-#createborderTwo {
-  border: 3px solid green;
-  width: 25em;
+#splash-btn {
   display: block;
-  margin: auto;
+  padding: 1%;
+  margin: 2% auto;
+  border-radius: 10px;
+  font-size: 1.5em;
 }
-
-#createborderThree {
-  border: 3px solid green;
-  width: 12em;
-  margin: auto;
+/*//////END splash.html///////*/
+/**/
+/**/
+/**/
+/**/
+/*///////START snips.html///////*/
+#top-wrapper {
   display: block;
-
+  margin: 1% auto;
+  padding: 2%;
+  border: 2px solid black;
 }
 
-#createborderFour {
-  border: 3px solid green;
-  width: 14em;
-  margin-left: 400px;
-  margin-right: 400px;
+#snips-logo {
+  font-size: 2em;
+  font-weight: bold;
+  display: inline-block;
+  margin: 0 5% 0 0;
 }
 
-#createborderFive {
-  border: 3px solid green;
-  width: 2.6em;
-  display: block;
-  margin: auto;
-  padding: .25em;
+#snips-btn {
+  display: inline-block;
+  padding: 1%;
+  margin: 0 5% 0 0;
+  border-radius: 10px;
+  font-size: 1.5em;
 }
+/*////END snips.html////*/
+/**/
+/**/
+/**/
+/**/
+/*///START snip-template.html////*/
+.snip {
+  display: inline-block;
+  width: 15%;
+  height: 300px;
+  border: 1px double black;
+  padding: 1%;
+  margin: 2%;
+}
+/*///END snip-template.html////*/
+
