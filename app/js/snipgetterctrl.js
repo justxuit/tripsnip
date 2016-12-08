@@ -9,9 +9,12 @@ app.controller("snipGetterCtrl", function($scope, snippetStorage){
 
 	//sets countryObj variable to scope so it can appear on html
 	$scope.countryArray = countryArray;
+		console.log(countryArray);
 
-	console.log(countryArray);
-	console.log($scope.countryArray);
+	//get total number of countries visited
+	var totalCountriesVisited = countryArray.length;
+	$scope.totalCountriesVisited = totalCountriesVisited;
+		console.log(totalCountriesVisited);
 });
 
 
