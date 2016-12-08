@@ -10,21 +10,24 @@ app.factory("snippetStorage", function(){ //creates factory
       name: "Aruba",
       nativeName: "Aruba",
       capital: "Oranjestad",
-      population: 107394,
+      population: "107,394",
+	  flag: "https://github.com/hjnilsson/country-flags/blob/master/png250px/aw.png?raw=true",
       note: "Aruba is cool. It's very warm here."
     },
     {
       name: "Belarus",
       nativeName: "Белару́сь",
       capital: "Minsk",
-      population: 9485300,
+      population: "9,485,300",
+	  flag: "https://github.com/hjnilsson/country-flags/blob/master/png250px/by.png?raw=true",
       note: "Much colder than Aruba. You'll probably need a jacket."
     },
     {
       name: "Cambodia",
       nativeName: "Kâmpŭchéa",
       capital: "Phnom Penh",
-      population: 15405157,
+      population: "15,405,157",
+	  flag: "https://github.com/hjnilsson/country-flags/blob/master/png250px/kh.png?raw=true",
       note: "No McDonald's here! What's the deal?!? :("
     }
   ];

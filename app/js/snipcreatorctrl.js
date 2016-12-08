@@ -17,7 +17,8 @@ app.controller("snipCreatorCtrl", function ($scope, $http, snippetStorage, $loca
 						name: $scope.countryData[0].name,
 						nativeName: $scope.countryData[0].nativeName,
 						capital: $scope.countryData[0].capital,
-						population: $scope.countryData[0].population,
+						population: $scope.countryData[0].population.toLocaleString(),
+						flag: "https://github.com/hjnilsson/country-flags/blob/master/png250px/" + $scope.countryData[0].alpha2Code.toLowerCase() + ".png?raw=true",
 						note: $scope.note
 					};
 					console.log(fullData);
