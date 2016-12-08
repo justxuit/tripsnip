@@ -26,48 +26,6 @@ app.factory("snippetStorage", function(){ //creates factory
       capital: "Phnom Penh",
       population: 15405157,
       note: "No McDonald's here! What's the deal?!? :("
-    },
-    {
-      name: "Cambodia",
-      nativeName: "Kâmpŭchéa",
-      capital: "Phnom Penh",
-      population: 15405157,
-      note: "No McDonald's here! What's the deal?!? :("
-    },
-    {
-      name: "Cambodia",
-      nativeName: "Kâmpŭchéa",
-      capital: "Phnom Penh",
-      population: 15405157,
-      note: "No McDonald's here! What's the deal?!? :("
-    },
-    {
-      name: "Cambodia",
-      nativeName: "Kâmpŭchéa",
-      capital: "Phnom Penh",
-      population: 15405157,
-      note: "No McDonald's here! What's the deal?!? :("
-    },
-    {
-      name: "Cambodia",
-      nativeName: "Kâmpŭchéa",
-      capital: "Phnom Penh",
-      population: 15405157,
-      note: "No McDonald's here! What's the deal?!? :("
-    },
-    {
-      name: "Cambodia",
-      nativeName: "Kâmpŭchéa",
-      capital: "Phnom Penh",
-      population: 15405157,
-      note: "No McDonald's here! What's the deal?!? :("
-    },
-    {
-      name: "Cambodia",
-      nativeName: "Kâmpŭchéa",
-      capital: "Phnom Penh",
-      population: 15405157,
-      note: "No McDonald's here! What's the deal?!? :("
     }
   ];
 
