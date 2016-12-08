@@ -12,7 +12,8 @@ app.config(function($routeProvider){
   });
 
   $routeProvider.when("/snips", {
-    templateUrl: "../partials/snips.html", 
+    templateUrl: "../partials/snips.html",
+    controller: "snipGetterCtrl"
   });
 
   $routeProvider.when("/about", {
@@ -22,9 +23,7 @@ app.config(function($routeProvider){
   $routeProvider.otherwise({
     templateUrl: "../partials/splash.html"
   });
-  
+
 });
-
-
 
 })();

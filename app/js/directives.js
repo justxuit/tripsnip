@@ -1,3 +1,5 @@
+(function(){
+
 var app = angular.module('tripSnipModule');
 
 app.directive('snipCreator', function(){
@@ -6,3 +8,6 @@ app.directive('snipCreator', function(){
     templateUrl: "../partials/snip-template.html"
   };
 });
+
+
+})();

@@ -28,20 +28,23 @@ app.factory("snippetStorage", function(){ //creates factory
       note: "No McDonald's here! What's the deal?!? :("
     }
   ];
+
 //puts the user's entry and API data into factory
   function setSnip(fullData){
     storedObj = fullData;
     snippetArray.push(storedObj);
     console.log(snippetArray);
   };
+
 //retrieves the entire array of snips from factory
-  function getSnip(){ 
+  function getSnip(){
     return snippetArray;
   };
 
   return {
-    setSnip:setSnip,
-    getSnip:getSnip
+    setSnip: setSnip,
+    getSnip: getSnip
   }
 });
+
 })(); //END IIFE
