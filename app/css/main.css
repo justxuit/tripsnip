@@ -108,7 +108,7 @@ a {
 /**/
 /**/
 /**/
-/*///START snip-template.html////*/
+/*////START snip-template.html////*/
 .snip {
   display: inline-block;
   width: 15%;
@@ -164,3 +164,35 @@ textarea {
   margin: 2% auto 1% auto;
   font-size: 1.5em;
 }
+
+/*////END create.html////*/
+
+
+
+/*////START about.html////*/
+.aboutimg {
+  border-radius: 25%;
+  width:100px;
+  height:100px;
+}
+
+figure {
+  display: inline-block;
+  width: 24%;
+  vertical-align: top;
+  text-align: center;
+}
+
+/*////END about.html////*/
+
+
+
+
+
+
+
+
+
+
+
+
