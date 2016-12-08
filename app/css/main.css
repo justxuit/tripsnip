@@ -93,6 +93,10 @@ a {
   border-radius: 10px;
   font-size: 1.5em;
 }
+
+#snips-wrapper {
+  border: 2px solid blue;
+}
 /*////END snips.html////*/
 /**/
 /**/
@@ -102,10 +106,15 @@ a {
 .snip {
   display: inline-block;
   width: 15%;
-  height: 300px;
+  min-height: 300px;
   border: 1px double black;
   padding: 1%;
   margin: 2%;
+  vertical-align: top;
 }
-/*///END snip-template.html////*/
 
+.snip-flag {
+  width: 90%;
+}
+
+/*///END snip-template.html////*/
