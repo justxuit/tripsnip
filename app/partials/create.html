@@ -5,9 +5,22 @@
 
 <form>
 	<div id="create-formwrapper">
-		<label for="country">Country:</label>
-		<input type = "text" ng-model="countrySearch"/>
+		<label>Country:</label>
+		<input type="text" ng-model="countrySearch"/>
 		<br/><br/>
+
+		<label>Favorite Place:</label>
+		<input type="text" ng-model="faveplace"/>
+		<br/><br/>
+
+		<label>Favorite Restaurant:</label>
+		<input type="text" ng-model="faverestaurant"/>
+		<br/><br/>
+
+		<label>Favorite Food:</label>
+		<input type="text" ng-model="favefood"/>
+		<br/><br/>
+
 		<label for="note">Travel Note:</label><textarea maxlength="650" ng-model="note"/></textarea>
 
 		<button ng-click ="retrieveCountryData()" id="create-btn">Snip!</button>
