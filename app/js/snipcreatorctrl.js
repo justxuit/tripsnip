@@ -15,6 +15,7 @@ app.controller("snipCreatorCtrl", function ($scope, $http, snippetStorage, $loca
 					//set the fullData object
 					var fullData = {
 						name: $scope.countryData[0].name,
+						region: $scope.countryData[0].region,
 						nativeName: $scope.countryData[0].nativeName,
 						capital: $scope.countryData[0].capital,
 						population: $scope.countryData[0].population.toLocaleString(),
