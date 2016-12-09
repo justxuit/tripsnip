@@ -101,7 +101,7 @@ a {
 }
 
 #snips-wrapper {
-  border: 2px solid blue;
+  border: 2px solid gray;
 }
 /*////END snips.html////*/
 /**/
@@ -111,18 +111,37 @@ a {
 /*////START snip-template.html////*/
 .snip {
   display: inline-block;
-  width: 15%;
-  min-height: 300px;
-  border: 1px double black;
+  width: 25%;
+  min-height: 400px;
+  border: 4px double black;
   padding: 1%;
   margin: 2%;
   vertical-align: top;
+  border-radius: 20px;
+}
+
+.country-name {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.property-name {
+  font-weight: bold;
 }
 
 .snip-flag {
   width: 90%;
   margin: 5% auto;
   display: block;
+}
+
+#snips-countrytotal {
+  display: block;
+  width: 15%;
+  margin: 1% auto 5% auto;
+  padding: 1%;
+  text-align: center;
+  border: 2px double black;
 }
 /*///END snip-template.html////*/
 
@@ -184,15 +203,3 @@ figure {
 }
 
 /*////END about.html////*/
-
-
-
-
-
-
-
-
-
-
-
-

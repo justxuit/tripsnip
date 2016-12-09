@@ -1,15 +1,18 @@
 <div class="snip">
-  <span>
+  <h1 class="country-name">
     {{country.name}}
-  </span>
+  </h1>
   <img class="snip-flag" ng-src="{{country.flag}}" alt="Flag of {{country.name}}">
   <ul>
-    <li>Native Name: {{country.nativeName}}</li>
-    <li>Capital: {{country.capital}}</li>
-    <li>Population: {{country.population}}</li>
-    <li>Favorite Place: {{country.favePlace}}</li>
-    <li>Favorite Restaurant: {{country.faveRestaurant}}</li>
-    <li>Favorite Food: {{country.faveFood}}</li>
-    <li>Note: {{country.note}}</li>
+    <li><span class="property-name">Native Name: </span> {{country.nativeName}}</li>
+    <li><span class="property-name">Capital: </span>
+    {{country.capital}}
+    </li>
+    <li><span class="property-name">Population: </span> {{country.population}}</li>
+    <li><span class="property-name">Favorite Place: </span> {{country.favePlace}}</li>
+    <li><span class="property-name">Favorite Restaurant: </span> {{country.faveRestaurant}}</li>
+    <li><span class="property-name">Favorite Food: </span> {{country.faveFood}}</li>
+    <li><span class="property-name">Note: </span>
+    {{country.note}}</li>
   </ul>
 </div>
