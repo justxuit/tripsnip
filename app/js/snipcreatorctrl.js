@@ -29,9 +29,9 @@ app.controller("snipCreatorCtrl", function ($scope, $http, snippetStorage, $loca
 					//send all data to the service factory
 					snippetStorage.setSnip(fullData);
 
-					//clearing data from user inputs
-					$scope.countrySearch = "";
-					$scope.note = "";
+					// //clearing data from user inputs
+					// $scope.countrySearch = "";
+					// $scope.note = "";
 
 					//directs to snippets page
 					$location.path("/snips");

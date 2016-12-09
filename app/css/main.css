@@ -1,8 +1,22 @@
+@font-face {
+  font-family: dosis;
+  src: url(../fonts/Dosis-Regular.ttf);
+}
+
+@font-face {
+  font-family: dosis-bold;
+  src: url(../fonts/Dosis-ExtraBold.ttf);
+}
+
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+/*//////////STYLING IMPORTS////////////*/
+
+
+
 
 body {
   background-color: #f2f2f2;
@@ -37,6 +51,7 @@ a {
   width: 60%;
   display: block;
   margin: 3% auto;
+  font-family: dosis;
 }
 
 #splash-img {
@@ -46,6 +61,7 @@ a {
 }
 
 #splash-logo {
+  font-family: dosis-bold;
   font-size: 3em;
   text-align: center;
   margin: 2% auto;
@@ -63,9 +79,11 @@ a {
   padding: 1em;
   line-height: 120%;
   font-size: 0.9em;
+  letter-spacing: 1.5px;
 }
 
 #splash-btn {
+  font-family: dosis-bold;
   display: block;
   padding: 1%;
   margin: 2% auto;
@@ -80,24 +98,27 @@ a {
 /*///////START snips.html///////*/
 #top-wrapper {
   display: block;
-  margin: 1% auto;
-  padding: 2%;
-  border: 2px solid black;
+  margin: 1% auto 3% auto;
+  padding: 2% 2% 4% 2%;
 }
 
 #snips-logo {
+  font-family: dosis-bold;
   font-size: 2em;
   font-weight: bold;
   display: inline-block;
-  margin: 0 5% 0 0;
+  margin: 0 5% 0 2%;
+  float: left;
 }
 
-#snips-btn {
+.nav-btn {
+  font-family: dosis-bold;
   display: inline-block;
+  margin: -1% 2% 0 0;
   padding: 1%;
-  margin: 0 5% 0 0;
   border-radius: 10px;
   font-size: 1.5em;
+  float: right;
 }
 
 #snips-wrapper {
@@ -113,7 +134,7 @@ a {
   display: inline-block;
   width: 25%;
   min-height: 400px;
-  border: 4px double black;
+  border: 4px solid black;
   padding: 1%;
   margin: 2%;
   vertical-align: top;
@@ -123,6 +144,10 @@ a {
 .country-name {
   font-size: 1.2em;
   font-weight: bold;
+}
+
+li {
+  margin-bottom: 4px;
 }
 
 .property-name {
@@ -137,17 +162,17 @@ a {
 
 #snips-countrytotal {
   display: block;
-  width: 15%;
+  width: 25%;
   margin: 1% auto 5% auto;
   padding: 1%;
   text-align: center;
-  border: 2px double black;
+  font-size: 1.5em;
 }
 /*///END snip-template.html////*/
-
-
-
-
+/**/
+/**/
+/**/
+/**/
 /*///START create.html////*/
 form {
   display: block;
@@ -163,12 +188,15 @@ form {
   margin: auto;
 }
 
-label {
+/*label {
   line-height: 150%;
-}
+}*/
 
 input {
-  display: inline-block;;
+  display: inline-block;
+  width: 60%;
+  padding: 1%;
+  border-radius: 4px;
 }
 
 textarea {
@@ -176,18 +204,24 @@ textarea {
   display: block;
   min-height: 150px;
   resize: none;
+  padding: 1%;
+  border-radius: 8px;
+  margin: 1% 0;
 }
 
 #create-btn {
+  font-family: dosis-bold;
   display: block;
-  margin: 2% auto 1% auto;
+  margin: 4% auto 1% auto;
+  padding: 1%;
   font-size: 1.5em;
+  border-radius: 10px;
 }
-
 /*////END create.html////*/
-
-
-
+/**/
+/**/
+/**/
+/**/
 /*////START about.html////*/
 .aboutimg {
   border-radius: 25%;
@@ -201,5 +235,4 @@ figure {
   vertical-align: top;
   text-align: center;
 }
-
 /*////END about.html////*/
