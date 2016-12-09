@@ -14,10 +14,11 @@
   box-sizing: border-box;
 }
 /*//////////STYLING IMPORTS////////////*/
-
-
-
-
+/**/
+/**/
+/**/
+/**/
+/**/
 body {
   background-color: #f2f2f2;
   font-family: sans-serif;
@@ -25,7 +26,7 @@ body {
 
 footer {
   font-weight: bold;
-  background-color: #ccc; /*light-grey*/
+  background-color:  #cce6ff; /*light-blue*/
   font-size: 0.6em;
   color: #333; /*dark-grey*/
   width: 100%;
@@ -223,10 +224,21 @@ textarea {
 /**/
 /**/
 /*////START about.html////*/
+#about-wrapper {
+  display: block;
+  width: 80%;
+  margin: 2% auto;
+}
+
+#about-text {
+  margin: 4% auto;
+}
+
 .aboutimg {
-  border-radius: 25%;
-  width:100px;
-  height:100px;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin: 0 0 5% 0;
 }
 
 figure {
