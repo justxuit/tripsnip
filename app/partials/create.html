@@ -6,7 +6,8 @@
 <form ng-controller="snipCreatorCtrl">
 	<div id="create-formwrapper">
 		<label>Country:</label>
-		<input type="text" id="countrysearch" ng-model="countrySearch"/>
+		<!-- auto-complete calls the custom auto-complete directive. ui-items tells autocomplete where to get the data (from the allcountries variable set in autocomplete.js file) -->
+		<input auto-complete ui-items="allcountries" ng-model="countrySearch"/>
 		<br/><br/>
 
 		<label>Favorite Place:</label>
