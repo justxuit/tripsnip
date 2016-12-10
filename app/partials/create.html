@@ -1,0 +1,28 @@
+<div id="top-wrapper">
+  <h1 id="snips-logo">TripSnip</h1>
+  <a href="#/snips"><button type="button" class="nav-btn" id="snips-nav-btn">Your snippets</button></a>
+</div>
+
+<form ng-controller="snipCreatorCtrl">
+	<div id="create-formwrapper">
+		<label>Country:</label>
+		<input type="text" id="countrysearch" ng-model="countrySearch"/>
+		<br/><br/>
+
+		<label>Favorite Place:</label>
+		<input type="text" ng-model="faveplace"/>
+		<br/><br/>
+
+		<label>Favorite Restaurant:</label>
+		<input type="text" ng-model="faverestaurant"/>
+		<br/><br/>
+
+		<label>Favorite Food:</label>
+		<input type="text" ng-model="favefood"/>
+		<br/><br/>
+
+		<label for="note">Travel Note:</label><textarea maxlength="650" ng-model="note"/></textarea>
+
+		<button ng-click ="retrieveCountryData()" id="create-btn">Snip!</button>
+	</div>
+</form>
