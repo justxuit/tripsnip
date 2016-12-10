@@ -1,18 +1,24 @@
-<div class="snip">
-  <h1 class="country-name">
-    {{country.name}}
-  </h1>
-  <img class="snip-flag" ng-src="{{country.flag}}" alt="Flag of {{country.name}}">
-  <ul>
-    <li><span class="property-name">Native Name: </span> {{country.nativeName}}</li>
-    <li><span class="property-name">Capital: </span>
-    {{country.capital}}
-    </li>
-    <li><span class="property-name">Population: </span> {{country.population}}</li>
-    <li><span class="property-name">Favorite Place: </span> {{country.favePlace}}</li>
-    <li><span class="property-name">Favorite Restaurant: </span> {{country.faveRestaurant}}</li>
-    <li><span class="property-name">Favorite Food: </span> {{country.faveFood}}</li>
-    <li><span class="property-name">Note: </span>
-    {{country.note}}</li>
-  </ul>
+<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+  <div class="flipper">
+    <div class="front {{country.region}}">
+      <h1 class="country-name">{{country.name}}</h1>
+      <img class="snip-flag" ng-src="{{country.flag}}" alt="flag of {{country.name}}">
+      <ul>
+        <li><span class="property-name">Capital: </span>
+        {{country.capital}}
+        </li>
+        <li><span class="property-name">Population: </span> {{country.population}}</li>
+      </ul>
+    </div>
+    <div class="back {{country.region}}">
+      <h1 class="country-name">{{country.nativeName}}</h1>
+      <ul>
+        <li><span class="property-name">Favorite Place: </span> {{country.favePlace}}</li>
+        <li><span class="property-name">Favorite Restaurant: </span> {{country.faveRestaurant}}</li>
+        <li><span class="property-name">Favorite Food: </span> {{country.faveFood}}</li>
+        <li><span class="property-name">Note: </span>
+        {{country.note}}</li>
+      </ul>
+    </div>
+  </div>
 </div>

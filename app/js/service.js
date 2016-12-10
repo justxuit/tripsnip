@@ -8,6 +8,7 @@ app.factory("snippetStorage", function(){ //creates factory
   var snippetArray = [
     {
       name: "Aruba",
+      region: "Americas",
       nativeName: "Aruba",
       capital: "Oranjestad",
       population: "107,394",
@@ -19,6 +20,7 @@ app.factory("snippetStorage", function(){ //creates factory
     },
     {
       name: "Belarus",
+      region: "Europe",
       nativeName: "Белару́сь",
       capital: "Minsk",
       population: "9,485,300",
@@ -30,6 +32,7 @@ app.factory("snippetStorage", function(){ //creates factory
     },
     {
       name: "Cambodia",
+      region: "Asia",
       nativeName: "Kâmpŭchéa",
       capital: "Phnom Penh",
       population: "15,405,157",
