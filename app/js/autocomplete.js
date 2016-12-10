@@ -17,5 +17,9 @@ app.controller("autoCompleteCtrl", function ($scope, $http){
 				console.log(allCountries);
 				
 			});
+		
+		$("#countrysearch").autocomplete({
+				source: allCountries
+			});
 	});
 })();
