@@ -16,7 +16,8 @@ app.factory("snippetStorage", function(){ //creates factory
       favePlace: "The beach!",
       faveRestaurant: "Faro Blanco",
       faveFood: "seafood",
-      note: "Aruba is cool. It's very warm here."
+      note: "Aruba is cool. It's very warm here.",
+      rating:  "4"
     },
     {
       name: "Belarus",
@@ -28,7 +29,8 @@ app.factory("snippetStorage", function(){ //creates factory
       favePlace: "The beach?",
       faveRestaurant: "Bistro de Luxe",
       faveFood: "cocktails",
-      note: "Much colder than Aruba. You'll probably need a jacket."
+      note: "Much colder than Aruba. You'll probably need a jacket.",
+      rating:  "3"
     },
     {
       name: "Cambodia",
@@ -40,7 +42,8 @@ app.factory("snippetStorage", function(){ //creates factory
       favePlace: "Still the beach.",
       faveRestaurant: "Romdeng",
       faveFood: "fish amok",
-      note: "No McDonald's here! What's the deal?!? :("
+      note: "No McDonald's here! What's the deal?!? :(",
+      rating:  "2"
     }
   ];
 

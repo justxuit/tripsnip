@@ -23,7 +23,8 @@ app.controller("snipCreatorCtrl", function ($scope, $http, snippetStorage, $loca
 						favePlace: $scope.faveplace,
 						faveRestaurant: $scope.faverestaurant,
 						faveFood: $scope.favefood,
-						note: $scope.note
+						note: $scope.note,
+						rating: $scope.rating
 					};
 					console.log(fullData);
 
