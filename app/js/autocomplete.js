@@ -16,6 +16,7 @@ app.controller("autoCompleteCtrl", function ($scope, $http){
 					allCountries.push(countryName);	
 				};
 			});
+		
 	});
 
 })();
