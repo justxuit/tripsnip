@@ -208,7 +208,7 @@ li {
 
 .img-container {
   display: block;
-  width: 68%;
+  width: 80%;
   margin: auto;
   padding: 4%;
 }
@@ -222,7 +222,7 @@ li {
 }
 
 .snip-flag {
-  width: 50%;
+  width: 55%;
   min-height: 50%;
   margin: 4% auto;
   padding: 0 0 0 5px;
