@@ -11,7 +11,7 @@
 
     <label for="month">Time of Trip:</label>
 		<select name = "Month" id="Month" ng-model="month">
-			<option value = "Month" selected></option>
+			<option value = "" selected></option>
 			<option value = "January">January</option>
 			<option value = "February">February</option>
 			<option value = "March">March</option>
@@ -26,36 +26,24 @@
 			<option value = "December">December</option>
 		</select>
 
-    <select name ="Year" id="Year" ng-model="year">
-      <option value = " " selected></option>
-      <option value = "2016">2016</option>
-      <option value = "2017">2017</option>
-      <option value = "2018">2018</option>
-      <option value = "2019">2019</option>
-      <option value = "2020">2020</option>
-      <option value = "2021">2021</option>
-      <option value = "2022">2022</option>
-      <option value = "2023">2023</option>
-      <option value = "2024">2024</option>
-      <option value = "2025">2025</option>
-    </select>
-
-    <br/><br/>
-
+    <input type ="number" id="Year" ng-model="year" placeholder="2016"/>
+     	
+	</br></br>
+	
     <label>Favorite Place:</label>
-		<input type="text" ng-model="faveplace" placeholder="favorite place"/>
+		<input type="text" ng-model="faveplace" placeholder="Favorite Place"/>
 
     <label>Favorite Restaurant:</label>
-		<input type="text" ng-model="faverestaurant" placeholder="favorite restaurant"/>
+		<input type="text" ng-model="faverestaurant" placeholder="Favorite Restaurant"/>
 
 		<label>Favorite Food:</label>
-		<input type="text" ng-model="favefood" placeholder="favorite food"/>
+		<input type="text" ng-model="favefood" placeholder="Favorite Food"/>
 
 		<label for="rating">Rate your trip 1 to 5 (1 = Terrible, 5 = Awesome)</label>
-		<input type="text" ng-model="rating" />
+		<input type="number" ng-model="rating" min="1" max="5"/>
 
 		<label for="note">Travel Note:</label>
-    <textarea maxlength="650" ng-model="note"/></textarea>
+		<textarea maxlength="650" ng-model="note"/></textarea>
 
 		<button ng-click ="retrieveCountryData()" id="create-btn">Snip!</button>
 	</div>
