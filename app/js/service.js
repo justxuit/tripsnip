@@ -9,6 +9,7 @@ app.factory("snippetStorage", function(){ //creates factory
     {
       name: "Aruba",
       region: "Americas",
+      icon: "../images/region_icons/Americas.png",
       nativeName: "Aruba",
       capital: "Oranjestad",
 	  language: "Dutch",
@@ -23,6 +24,7 @@ app.factory("snippetStorage", function(){ //creates factory
     {
       name: "Belarus",
       region: "Europe",
+      icon: "../images/region_icons/Europe.png",
       nativeName: "Белару́сь",
       capital: "Minsk",
 	  language: "Belarusian",
@@ -37,6 +39,7 @@ app.factory("snippetStorage", function(){ //creates factory
     {
       name: "Cambodia",
       region: "Asia",
+      icon: "../images/region_icons/Asia.png",
       nativeName: "Kâmpŭchéa",
       capital: "Phnom Penh",
 	  language: "Khmer",

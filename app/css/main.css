@@ -13,6 +13,11 @@
   src: url(../fonts/NotoSans-Regular.ttf);
 }
 
+@font-face {
+  font-family: moo;
+  src: url(../fonts/SwankyandMooMoo.ttf);
+}
+
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -147,11 +152,9 @@ a {
 }
 
 #snips-logo {
-  font-family: dosis-bold;
-  font-size: 2em;
-  font-weight: bold;
+  width: 18%;
   display: inline-block;
-  margin: 0 5% 0 2%;
+  margin: -3% 1% 2% 2%;
   float: left;
 }
 
@@ -207,10 +210,17 @@ a {
 
 li {
   margin-bottom: 4px;
+  font-family: noto;
 }
 
 .property-name {
   font-weight: bold;
+  font-family: sans-serif;
+}
+
+.user-data {
+  font-family: moo;
+  font-size: 1.5em;
 }
 
 .img-container {
@@ -225,7 +235,6 @@ li {
   display: inline-block;
   margin: 4% auto;
   /*padding: 0 5px 0 0;*/
-  opacity: 0.7;
 }
 
 .snip-flag {
@@ -242,6 +251,10 @@ ul {
   line-height: 150%;
 }
 
+.front ul {
+  padding: 0 20px;
+}
+
 #snips-countrytotal {
   display: block;
   width: 25%;
@@ -249,6 +262,9 @@ ul {
   padding: 1%;
   text-align: center;
   font-size: 1.5em;
+  font-family: dosis-bold;
+  letter-spacing: 2px;
+  word-spacing: 4px;
 }
 /*////////////////////flipper animation/////////////*/
 
@@ -273,8 +289,8 @@ ul {
   padding: 1% 4%;
   min-width: 261.5px;
   min-height: 300px;
-  border: 4px solid;
-  box-shadow: 4px 4px 5px #ccc;
+  border: 4px dashed;
+  box-shadow: 4px 4px 5px #b3b3b3;
   background-color: #f2f2f2;
 }
 

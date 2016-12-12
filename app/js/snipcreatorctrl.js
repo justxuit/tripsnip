@@ -16,6 +16,7 @@ app.controller("snipCreatorCtrl", function ($scope, $http, snippetStorage, $loca
 					var fullData = {
 						name: $scope.countryData[0].name,
 						region: $scope.countryData[0].region,
+						icon: "../images/region_icons/" + $scope.countryData[0].region + ".png",
 						nativeName: $scope.countryData[0].nativeName,
 						capital: $scope.countryData[0].capital,
 						language: getLanguage(),
@@ -25,9 +26,9 @@ app.controller("snipCreatorCtrl", function ($scope, $http, snippetStorage, $loca
 						faveRestaurant: $scope.faverestaurant,
 						faveFood: $scope.favefood,
 						rating: $scope.rating,
-						note: $scope.note						
+						note: $scope.note
 					};
-					
+
 					function getLanguage() {
 						var countryLanguage = $scope.countryData[0].languages[0];
 						var languageCodes = {
@@ -109,9 +110,9 @@ app.controller("snipCreatorCtrl", function ($scope, $http, snippetStorage, $loca
 							undefined:	"Not available"
 						};
 						//because the api languagecode is a string, we use obj[  ]  to get the property
-						return (languageCodes[countryLanguage]);  
+						return (languageCodes[countryLanguage]);
 					};
-					
+
 					console.log(fullData);
 
 					//send all data to the service factory
