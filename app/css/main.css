@@ -364,10 +364,20 @@ form {
 }
 
 input {
-  display: inline-block;
+  display: block;
   width: 60%;
   padding: 1%;
   border-radius: 4px;
+  margin: 2%;
+}
+
+select {
+  display: inline-block;
+  margin: 2%;
+}
+
+#year {
+  display: inline-block;
 }
 
 textarea {
@@ -377,7 +387,7 @@ textarea {
   resize: none;
   padding: 1%;
   border-radius: 8px;
-  margin: 1% 0;
+  margin: 2%;
 }
 
 #create-btn {

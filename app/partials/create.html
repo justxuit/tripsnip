@@ -5,63 +5,57 @@
 
 <form ng-controller="snipCreatorCtrl">
 	<div id="create-formwrapper">
-		<label>Country:</label>
 		<!-- auto-complete calls the custom auto-complete directive. ui-items tells autocomplete where to get the data (from the allcountries variable set in autocomplete.js file) -->
-		<input auto-complete ui-items="allcountries" ng-model="countrySearch"/>
-		<br/><br/>
+    <label>Country:</label>
+		<input auto-complete ui-items="allcountries" ng-model="countrySearch" placeholder="Country"/>
 
-		<label>Favorite Place:</label>
-		<input type="text" ng-model="faveplace"/>
-		<br/><br/>
+    <label for="month">Time of Trip:</label>
+		<select name = "Month" id="Month" ng-model="month">
+			<option value = "Month" selected></option>
+			<option value = "January">January</option>
+			<option value = "February">February</option>
+			<option value = "March">March</option>
+			<option value = "April">April</option>
+			<option value = "May">May</option>
+			<option value = "June">June</option>
+			<option value = "July">July</option>
+			<option value = "August">August</option>
+			<option value = "September">September</option>
+			<option value = "October">October</option>
+			<option value = "November">November</option>
+			<option value = "December">December</option>
+		</select>
 
-		<label>Favorite Restaurant:</label>
-		<input type="text" ng-model="faverestaurant"/>
-		<br/><br/>
+    <select name ="Year" id="Year" ng-model="year">
+      <option value = " " selected></option>
+      <option value = "2016">2016</option>
+      <option value = "2017">2017</option>
+      <option value = "2018">2018</option>
+      <option value = "2019">2019</option>
+      <option value = "2020">2020</option>
+      <option value = "2021">2021</option>
+      <option value = "2022">2022</option>
+      <option value = "2023">2023</option>
+      <option value = "2024">2024</option>
+      <option value = "2025">2025</option>
+    </select>
+
+    <br/><br/>
+
+    <label>Favorite Place:</label>
+		<input type="text" ng-model="faveplace" placeholder="favorite place"/>
+
+    <label>Favorite Restaurant:</label>
+		<input type="text" ng-model="faverestaurant" placeholder="favorite restaurant"/>
 
 		<label>Favorite Food:</label>
-		<input type="text" ng-model="favefood"/>
-		<br/><br/>
+		<input type="text" ng-model="favefood" placeholder="favorite food"/>
 
 		<label for="rating">Rate your trip 1 to 5 (1 = Terrible, 5 = Awesome)</label>
 		<input type="text" ng-model="rating" />
 
-		<br/><br/>
-
-		<label for="month">Select Month of Your Travel Entry:</label>
-			<select name = "Month" id="Month" ng-model="month">
-				<option value = " " selected></option>
-				<option value = "January">January</option>
-				<option value = "February">February</option>
-				<option value = "March">March</option>
-				<option value = "April">April</option>
-				<option value = "May">May</option>
-				<option value = "June">June</option>
-				<option value = "July">July</option>
-				<option value = "August">August</option>
-				<option value = "September">September</option>
-				<option value = "October">October</option>
-				<option value = "November">November</option>
-				<option value = "December">December</option>
-			</select>
-		<br/><br/>
-
-		<label for="year">Select Year of Your Travel Entry:</label>
-			<select name = "Year" id="Year" ng-model="year">
-				<option value = " " selected></option>
-				<option value = "2016">2016</option>
-				<option value = "2017">2017</option>
-				<option value = "2018">2018</option>
-				<option value = "2019">2019</option>
-				<option value = "2020">2020</option>
-				<option value = "2021">2021</option>
-				<option value = "2022">2022</option>
-				<option value = "2023">2023</option>
-				<option value = "2024">2024</option>
-				<option value = "2025">2025</option>
-			</select>
-		<br/><br/>
-
-		<label for="note">Travel Note:</label><textarea maxlength="650" ng-model="note"/></textarea>
+		<label for="note">Travel Note:</label>
+    <textarea maxlength="650" ng-model="note"/></textarea>
 
 		<button ng-click ="retrieveCountryData()" id="create-btn">Snip!</button>
 	</div>
