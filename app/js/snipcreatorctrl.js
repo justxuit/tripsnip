@@ -26,7 +26,8 @@ app.controller("snipCreatorCtrl", function ($scope, $http, snippetStorage, $loca
 						faveRestaurant: $scope.faverestaurant,
 						faveFood: $scope.favefood,
 						rating: $scope.rating,
-						note: $scope.note
+						date:  $scope.month + " " + $scope.year,
+						note: $scope.note						
 					};
 
 					function getLanguage() {
