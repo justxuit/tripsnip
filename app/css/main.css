@@ -13,6 +13,11 @@
   src: url(../fonts/NotoSans-Regular.ttf);
 }
 
+@font-face {
+  font-family: moo;
+  src: url(../fonts/SwankyandMooMoo.ttf);
+}
+
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -87,13 +92,14 @@ a {
 #splash-container {
   background-color: rgba(255, 255, 255, 0.4);
   width: 100%;
-  height: 85%;
+  height: 84%;
   display: block;
-  margin: 3% auto;
+  margin: 4% auto 4% auto;
   font-family: dosis;
 }
 
 #splash-logo {
+  width: 28%;
   font-family: dosis-bold;
   font-size: 3em;
   display: block;
@@ -107,7 +113,7 @@ a {
 }
 
 .splash-blurb {
-  width: 35%;
+  width: 50%;
   display: block;
   margin: auto;
   padding: 1em;
@@ -146,11 +152,9 @@ a {
 }
 
 #snips-logo {
-  font-family: dosis-bold;
-  font-size: 2em;
-  font-weight: bold;
+  width: 18%;
   display: inline-block;
-  margin: 0 5% 0 2%;
+  margin: -3% 1% 2% 2%;
   float: left;
 }
 
@@ -206,10 +210,17 @@ a {
 
 li {
   margin-bottom: 4px;
+  font-family: noto;
 }
 
 .property-name {
   font-weight: bold;
+  font-family: sans-serif;
+}
+
+.user-data {
+  font-family: moo;
+  font-size: 1.5em;
 }
 
 .img-container {
@@ -224,7 +235,6 @@ li {
   display: inline-block;
   margin: 4% auto;
   /*padding: 0 5px 0 0;*/
-  opacity: 0.7;
 }
 
 .snip-flag {
@@ -241,6 +251,10 @@ ul {
   line-height: 150%;
 }
 
+.front ul {
+  padding: 0 20px;
+}
+
 #snips-countrytotal {
   display: block;
   width: 25%;
@@ -248,6 +262,9 @@ ul {
   padding: 1%;
   text-align: center;
   font-size: 1.5em;
+  font-family: dosis-bold;
+  letter-spacing: 2px;
+  word-spacing: 4px;
 }
 /*////////////////////flipper animation/////////////*/
 
@@ -272,8 +289,8 @@ ul {
   padding: 1% 4%;
   min-width: 261.5px;
   min-height: 300px;
-  border: 4px solid;
-  box-shadow: 4px 4px 5px #ccc;
+  border: 4px dashed;
+  box-shadow: 4px 4px 5px #b3b3b3;
   background-color: #f2f2f2;
 }
 
@@ -293,11 +310,12 @@ ul {
 
 .Africa {
   border-color: rgb(244, 120, 53);
+  background-color: rgba(244, 120, 53, 0.55);
 }
 
 .Americas {
-  border-color: #262626;
-  background-color: rgba(142, 193, 39, 0.8);
+  border-color: rgb(142, 193, 39);
+  background-color: rgba(142, 193, 39, 0.55);
 }
 
 .Asia {
@@ -307,14 +325,17 @@ ul {
 
 .Europe {
   border-color: rgb(0, 174, 219);
+  background-color: rgba(0, 174, 219, 0.55);
 }
 
 .Oceania {
   border-color: rgb(162, 0, 255);
+  background-color: rgba(162, 0, 255, 0.55);
 }
 
 .Polar {
   border-color: rgb(242, 242, 242);
+  border-color: rgba(242, 242, 242, 0.55);
 }
 
 /*///END snip-template.html////*/
