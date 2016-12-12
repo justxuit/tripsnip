@@ -8,6 +8,11 @@
   src: url(../fonts/Dosis-ExtraBold.ttf);
 }
 
+@font-face {
+  font-family: noto;
+  src: url(../fonts/NotoSans-Regular.ttf);
+}
+
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -20,12 +25,12 @@
 /**/
 /**/
 body {
-  background-color: #f2f2f2;
+  background-color: #e2dfdb;
   font-family: sans-serif;
 }
 
 footer {
-  background-color: #333;
+  background-color: #404040;
   font-size: 0.6em;
   color: #f2f2f2;
   width: 100%;
@@ -33,10 +38,22 @@ footer {
   position: fixed;
   bottom: 0px;
   text-align: center;
-  padding: 5px;
+  padding: 8px;
   letter-spacing: 2px;
   word-spacing: 3px;
   line-height: 125%;
+}
+
+#footer-left {
+  display: inline-block;
+  float:left;
+  margin-left: 1%;
+}
+
+#footer-right {
+  display: inline-block;
+  float: right;
+  margin-right: 1%;
 }
 
 a {
@@ -60,11 +77,11 @@ a {
 }
 
 #splash-container {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.4);
   width: 100%;
-  height: 80%;
+  height: 85%;
   display: block;
-  margin: 4% auto;
+  margin: 3% auto;
   font-family: dosis;
 }
 
@@ -78,9 +95,10 @@ a {
 #tagline {
   text-align: center;
   font-size: 1.5em;
+  font-weight: bold;
 }
 
-#splash-blurb {
+.splash-blurb {
   width: 35%;
   display: block;
   margin: auto;
@@ -95,10 +113,16 @@ a {
   font-family: dosis-bold;
   display: block;
   padding: 1%;
-  margin: 4% auto;
-  border-radius: 10px;
+  margin: 3% auto;
+  border: 2px solid #262626;
+  border-radius: 12px 2px;
   font-size: 1.5em;
   z-index: 1000;
+  box-shadow: 3px 3px 2px #888888;
+}
+
+#splash-btn:active {
+  box-shadow: 1px 1px 0 0 #888888;
 }
 /*//////END splash.html///////*/
 /**/
@@ -136,7 +160,6 @@ a {
   width: 90%;
   display: block;
   margin: auto;
-  border: 1px solid #ccc;
 }
 /*////END snips.html////*/
 /**/
@@ -155,10 +178,22 @@ a {
 }
 
 .country-name {
-  font-size: 1.2em;
+  font-size: 1.4em;
   font-weight: bold;
   text-align: center;
   margin: 2% auto;
+  font-family: dosis-bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.country-nativename {
+  font-size: 1.2em;
+  font-weight: bolder;
+  text-align: center;
+  margin: 2% auto 4% auto;
+  font-family: noto;
+  letter-spacing: 2px;
 }
 
 li {
@@ -169,10 +204,32 @@ li {
   font-weight: bold;
 }
 
-.snip-flag {
-  width: 90%;
-  margin: 5% auto;
+.img-container {
   display: block;
+  width: 68%;
+  margin: auto;
+  padding: 4%;
+}
+
+.land-icon {
+  max-width: 64px;
+  display: inline-block;
+  margin: 4% auto;
+  padding: 0 5px 0 0;
+  opacity: 0.7;
+}
+
+.snip-flag {
+  width: 50%;
+  min-height: 50%;
+  margin: 4% auto;
+  padding: 0 0 0 5px;
+  display: inline-block;
+}
+
+ul {
+  margin: 6% auto 2% auto;
+  line-height: 150%;
 }
 
 #snips-countrytotal {
@@ -183,32 +240,6 @@ li {
   text-align: center;
   font-size: 1.5em;
 }
-
-.Africa {
-  background-color: rgba(244, 120, 53, 0.5);
-}
-
-.Americas {
-  background-color: rgba(142, 193, 39, 0.5);
-}
-
-.Asia {
-  background-color: rgba(212, 18, 64, 0.5);
-}
-
-.Europe {
-  background-color: rgba(0, 174, 219, 0.5);
-}
-
-.Oceania {
-  background-color: rgba(162, 0, 255, 0.5);
-}
-
-.Polar {
-  background-color: rgba(242, 242, 242, 0.5);
-}
-
-
 /*////////////////////flipper animation/////////////*/
 
 /* flip the pane on hover */
@@ -231,22 +262,51 @@ li {
 	left: 0;
   padding: 1% 4%;
   min-height: 300px;
-  border: 2px solid #ccc;
-  box-shadow: 4px 4px 5px #b3b3b3;
+  border: 4px solid;
+  box-shadow: 4px 4px 5px #ccc;
+  background-color: #f2f2f2;
 }
 
 /* front pane*/
 .front {
 	z-index: 2;
 	transform: rotateY(0deg);
-	border-radius: 20px 4px;
+	border-radius: 24px 0px;
 }
 
 /* back pane, hidden */
 .back {
 	transform: rotateY(180deg);
-	border-radius: 4px 20px;
+	border-radius: 0px 24px;
 }
+
+
+.Africa {
+  border-color: rgb(244, 120, 53);
+}
+
+.Americas {
+  border-color: #262626;
+  background-color: rgba(142, 193, 39, 0.8);
+}
+
+.Asia {
+  border-color: rgb(212, 18, 64);
+  background-color: rgba(212, 18, 64, 0.55);
+}
+
+.Europe {
+  border-color: rgb(0, 174, 219);
+}
+
+.Oceania {
+  border-color: rgb(162, 0, 255);
+}
+
+.Polar {
+  border-color: rgb(242, 242, 242);
+}
+
 /*///END snip-template.html////*/
 /**/
 /**/
@@ -254,11 +314,16 @@ li {
 /**/
 /*///START create.html////*/
 form {
+  font-family: noto;
+  font-size: 0.85em;
+  font-weight: bold;
   display: block;
   width: 60%;
   margin: 2% auto 5% auto;
-  border: 1px solid black;
-  padding: 1%;
+  border: 2px solid #ccc;
+  padding: 4%;
+  background-color: #f2f2f2;
+  border-radius: 24px 0px;
 }
 
 #create-formwrapper {
