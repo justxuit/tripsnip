@@ -30,18 +30,20 @@ body {
 }
 
 footer {
-  background-color: #404040;
-  font-size: 0.6em;
-  color: #f2f2f2;
+  background-color: #f2f2f2;
+  font-size: 0.65em;
+  font-weight: bold;
+  color: #262626;
   width: 100%;
   display: block;
   position: fixed;
   bottom: 0px;
   text-align: center;
-  padding: 8px;
+  padding: 6px;
   letter-spacing: 2px;
   word-spacing: 3px;
   line-height: 125%;
+  border-top: 1px solid #ccc;
 }
 
 #footer-left {
