@@ -2,6 +2,7 @@
   <div class="flipper">
     <div class="front {{country.region}}">
       <h1 class="country-name">{{country.name}}</h1>
+      <h2 class="country-nativename">({{country.nativeName}})</h2>
       <div class="img-container">
         <img class="land-icon" src="../images/landscapes/png/beach.png">
         <img class="snip-flag" ng-src="{{country.flag}}" alt="flag of {{country.name}}">
@@ -14,7 +15,7 @@
       </ul>
     </div>
     <div class="back {{country.region}}">
-      <h1 class="country-nativename">{{country.nativeName}}</h1>
+      <h1 class="country-name">{{country.name}}</h1>
       <ul>
         <li><span class="property-name">Favorite Place: </span> {{country.favePlace}}</li>
         <li><span class="property-name">Favorite Restaurant: </span> {{country.faveRestaurant}}</li>
