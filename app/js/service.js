@@ -25,7 +25,7 @@ app.factory("snippetStorage", function(){ //creates factory
       region: "Europe",
       nativeName: "Белару́сь",
       capital: "Minsk",
-	  Language: "Belarusian",
+	  language: "Belarusian",
       population: "9,485,300",
 	  flag: "https://github.com/hjnilsson/country-flags/blob/master/png250px/by.png?raw=true",
       favePlace: "The beach?",
