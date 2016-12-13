@@ -483,3 +483,9 @@ figcaption {
 	color: #D41243;
 }
 /*////END about.html////*/
+
+@media (max-width: 1200px) {
+  .flip-container {
+    display: block;
+  }
+}
