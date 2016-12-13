@@ -451,6 +451,13 @@ textarea {
 
 #about-text {
   margin: 4% auto;
+  font-family: dosis;
+  font-size: 20px;
+}
+
+h4 {
+	font-family: dosis;
+  font-size: 20px;
 }
 
 .aboutimg {
@@ -467,7 +474,7 @@ figure {
 }
 
 .about-link-icon {
-  width: 11%;
+  width: 20px;
   margin: 5px;
 }
 
@@ -481,11 +488,68 @@ figure {
 figcaption {
 	margin: 10px;
 	color: #D41243;
+	font-family: dosis;
+    font-size: 20px;
 }
 /*////END about.html////*/
 
 @media (max-width: 1200px) {
   .flip-container {
     display: block;
+	margin: auto;
   }
 }
+
+ @media (max-width: 900px) {
+	#footer-left, #footer-mid,  #footer-right{
+	  display: block;
+	  clear: both;
+	  margin: auto;
+	  width: 100%;
+	}
+ }
+ 
+	@media (max-width: 750px) {
+		label {
+			font-size: 1em;
+		}
+		
+		select, input#year{
+			display: block;
+		}
+		
+		#create-btn {
+			width: 30%;
+			font-size: 1em;
+		}
+		
+		.nav-btn {
+			padding: 2px;
+			font-size: 1em;
+			width: 10em;
+		}
+	
+ }
+ 
+ @media (max-width: 650px) {
+	 
+	 #top-wrapper {
+		 height: 80px;
+	 }
+	 
+	 #snips-logo {
+		 width: 40%;
+		 margin-top: 10px;
+	 }
+	 
+	 #snips-dash, #snips-dash2 {
+		 display: none;
+	 }
+	 
+	 .nav-btn {
+		 margin-top: 10px;
+	 }
+	 
+	 
+ }
+
