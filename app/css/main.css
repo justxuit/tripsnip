@@ -128,12 +128,12 @@ a {
   display: block;
   padding: 1%;
   margin: 3% auto;
-  border: 2px solid #8EC127;
+  border: 2px solid #A9E555;
   border-radius: 12px 2px;
   font-size: 1.5em;
   z-index: 1000;
   box-shadow: 3px 3px #D41243;
-  background-color: #A9E555;
+  background-color: #8EC127;
 }
 
 #splash-btn:active {
@@ -146,45 +146,44 @@ a {
 /**/
 /*///////START snips.html///////*/
 #top-wrapper {
-  /*background-color: #262626;*/
+  background-color: #57008A;
   display: block;
-  margin: 1% auto 3% auto;
-  padding: 2% 2% 4% 2%;
+  padding: 1%;
 }
 
 #snips-logo {
   width: 18%;
   display: inline-block;
-  margin: -30px 0 10px 10px;
   float: left;
 }
 
 #snips-dash {
   width: 39%;
   display: inline-block;
-  margin: -30px 0 10px -5px;
 }
 
 #snips-dash2 {
   width: 39%;
   display: inline-block;
-  margin: -30px 0 10px -20px;
   z-index: 1;
+  position: relative;
+  right: 16px;
 }
 
 .nav-btn {
   font-family: dosis-bold;
   display: inline-block;
-  margin: -1% 2% 0 0;
   padding: 1%;
   border-radius: 10px;
-  font-size: 1.5em;
+  font-size: 2vw;
   position: absolute;
   right: 1%;
+  top: 5%;
   float: right;
   z-index: 5;
   border: 4px solid #262626;
   box-shadow: 3px 3px 2px #888888;
+  width: 20%;
 }
 
 #nav-btn:active {
@@ -287,10 +286,12 @@ ul {
   margin: 1% auto 5% auto;
   padding: 1%;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.75vw;
   font-family: dosis-bold;
   letter-spacing: 2px;
   word-spacing: 4px;
+  border: 3px solid #57008A;
+  border-radius: 10px;
 }
 /*////////////////////flipper animation/////////////*/
 
@@ -383,6 +384,12 @@ form {
   border-radius: 24px 0px;
 }
 
+label {
+	font-family: dosis;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
 #create-formwrapper {
   width: 80%;
   display: block;
@@ -424,8 +431,9 @@ textarea {
   display: block;
   margin: 4% auto 1% auto;
   padding: 1%;
-  font-size: 1.5em;
+  font-size: 2vw;
   border-radius: 10px;
+  width: 20%;
 }
 /*////END create.html////*/
 /**/
