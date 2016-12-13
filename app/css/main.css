@@ -374,10 +374,13 @@ input {
 select {
   display: inline-block;
   margin: 2%;
+  border-radius: 4px;
+  padding: 1%;
 }
 
-#year {
+input#year {
   display: inline-block;
+  width: 20%;
 }
 
 textarea {

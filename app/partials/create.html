@@ -9,7 +9,7 @@
     <label>Country:</label>
 		<input auto-complete ui-items="allcountries" ng-model="countrySearch" placeholder="Country"/>
 
-    <label for="month">Time of Trip:</label>
+    <label for="month">Travel Date:</label>
 		<select name = "Month" id="Month" ng-model="month">
 			<option value = "" selected></option>
 			<option value = "January">January</option>
@@ -26,7 +26,7 @@
 			<option value = "December">December</option>
 		</select>
 
-    <input type ="number" id="Year" ng-model="year" placeholder="2016"/>
+    <input type ="number" id="year" ng-model="year" placeholder="2016"/>
      	
 	</br></br>
 	
@@ -43,7 +43,7 @@
 		<input type="number" ng-model="rating" min="1" max="5" placeholder="3"/>
 
 		<label for="note">Travel Note:</label>
-		<textarea maxlength="650" ng-model="note"/></textarea>
+		<textarea maxlength="650" ng-model="note" placeholder="Type a note about your trip here"/></textarea>
 
 		<button ng-click ="retrieveCountryData()" id="create-btn">Snip!</button>
 	</div>
