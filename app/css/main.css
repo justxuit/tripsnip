@@ -416,8 +416,7 @@ textarea {
 
 .aboutimg {
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
+  width: 60%;
   margin: 0 0 5% 0;
 }
 
@@ -428,11 +427,20 @@ figure {
   text-align: center;
 }
 
-.linkedin {
+.about-link-icon {
   width: 11%;
+  margin: 5px;
 }
 
-.portfolio {
-  width: 11%;
+#about-flaticon {
+	width: 90%;
+	margin: 50px auto;
+	font-size: .7em;
+	text-align: center;
+}
+
+figcaption {
+	margin: 10px;
+	color: #D41243;
 }
 /*////END about.html////*/
