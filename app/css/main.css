@@ -237,7 +237,8 @@ li {
 
 .property-name {
   font-weight: bold;
-  font-family: sans-serif;
+  font-family: dosis;
+  font-weight: 1.2em;
 }
 
 .user-data {
@@ -247,25 +248,27 @@ li {
 
 .img-container {
   display: block;
-  width: 80%;
+  width: 90%;
   margin: auto;
-  padding: 4%;
+  padding: 2%;
 }
 
 .land-icon {
   max-width: 64px;
   display: inline-block;
-  margin: 4% auto;
+  margin: 2%;
+  vertical-align: middle;
   /*padding: 0 5px 0 0;*/
 }
 
 .snip-flag {
   width: 55%;
   min-height: 50%;
-  margin: 4% auto;
+  margin: 2%;
   /*padding: 0 0 0 5px;*/
   border-radius: 4px;
   display: inline-block;
+  vertical-align: middle;
 }
 
 ul {
