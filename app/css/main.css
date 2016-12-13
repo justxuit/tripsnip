@@ -128,11 +128,12 @@ a {
   display: block;
   padding: 1%;
   margin: 3% auto;
-  border: 2px solid #262626;
+  border: 2px solid #8EC127;
   border-radius: 12px 2px;
   font-size: 1.5em;
   z-index: 1000;
-  box-shadow: 3px 3px 2px #888888;
+  box-shadow: 3px 3px #D41243;
+  background-color: #A9E555;
 }
 
 #splash-btn:active {
