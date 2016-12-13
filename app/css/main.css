@@ -154,8 +154,21 @@ a {
 #snips-logo {
   width: 18%;
   display: inline-block;
-  margin: -3% 1% 2% 2%;
+  margin: -30px 0 10px 10px;
   float: left;
+}
+
+#snips-dash {
+  width: 39%;
+  display: inline-block;
+  margin: -30px 0 10px -5px;
+}
+
+#snips-dash2 {
+  width: 39%;
+  display: inline-block;
+  margin: -30px 0 10px -20px;
+  z-index: 1;
 }
 
 .nav-btn {
@@ -165,7 +178,16 @@ a {
   padding: 1%;
   border-radius: 10px;
   font-size: 1.5em;
+  position: absolute;
+  right: 1%;
   float: right;
+  z-index: 5;
+  border: 4px solid #262626;
+  box-shadow: 3px 3px 2px #888888;
+}
+
+#nav-btn:active {
+  box-shadow: 1px 1px 0 0 #888888;
 }
 
 #snips-wrapper {
