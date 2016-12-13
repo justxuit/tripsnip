@@ -9,7 +9,7 @@ app.factory("snippetStorage", function(){ //creates factory
     {
       name: "Aruba",
       region: "Americas",
-      icon: "../images/region_icons/Americas.png",
+      icon: "./images/region_icons/Americas.png",
       nativeName: "Aruba",
       capital: "Oranjestad",
 	  language: "Dutch",
@@ -25,7 +25,7 @@ app.factory("snippetStorage", function(){ //creates factory
     {
       name: "Belarus",
       region: "Europe",
-      icon: "../images/region_icons/Europe.png",
+      icon: "./images/region_icons/Europe.png",
       nativeName: "Белару́сь",
       capital: "Minsk",
 	  language: "Belarusian",
@@ -36,12 +36,12 @@ app.factory("snippetStorage", function(){ //creates factory
       faveFood: "cocktails",
       rating:  "3",
       date:  "June 2016",
-      note: "Much colder than Aruba. You'll probably need a jacket." 
+      note: "Much colder than Aruba. You'll probably need a jacket."
     },
     {
       name: "Cambodia",
       region: "Asia",
-      icon: "../images/region_icons/Asia.png",
+      icon: "./images/region_icons/Asia.png",
       nativeName: "Kâmpŭchéa",
       capital: "Phnom Penh",
 	  language: "Khmer",
@@ -52,7 +52,7 @@ app.factory("snippetStorage", function(){ //creates factory
       faveFood: "fish amok",
       rating:  "2",
       date:  "August 2016",
-      note: "No McDonald's here! What's the deal?!? :("  
+      note: "No McDonald's here! What's the deal?!? :("
     }
   ];
 

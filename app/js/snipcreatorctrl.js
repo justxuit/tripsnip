@@ -16,7 +16,7 @@ app.controller("snipCreatorCtrl", function ($scope, $http, snippetStorage, $loca
 					var fullData = {
 						name: $scope.countryData[0].name,
 						region: $scope.countryData[0].region,
-						icon: "../images/region_icons/" + $scope.countryData[0].region + ".png",
+						icon: "./images/region_icons/" + $scope.countryData[0].region + ".png",
 						nativeName: $scope.countryData[0].nativeName,
 						capital: $scope.countryData[0].capital,
 						language: getLanguage(),
@@ -27,7 +27,7 @@ app.controller("snipCreatorCtrl", function ($scope, $http, snippetStorage, $loca
 						faveFood: $scope.favefood,
 						rating: $scope.rating,
 						date:  $scope.month + " " + $scope.year,
-						note: $scope.note						
+						note: $scope.note
 					};
 
 					function getLanguage() {

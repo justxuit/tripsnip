@@ -1,52 +1,32 @@
 var gulp = require('gulp');
+var concatCss = require('gulp-concat-css');
 
-var useref = require('gulp-useref');
 
-gulp.task('useref', function(){
-  return gulp.src('app/*.html')
-    .pipe(useref())
-    .pipe(gulp.dest('dist'))
+gulp.task('cssconcat', function () {
+  return gulp.src('app/**/*.css')
+    .pipe(concatCss("css/bundle.css"))
+    .pipe(gulp.dest('dist'));
 });
 
 
-
-// Other requires...
 var uglify = require('gulp-uglify');
-var gulpIf = require('gulp-if');
+var pump = require('pump');
 
-gulp.task('useref', function(){
-  return gulp.src('app/*.html')
-    .pipe(useref())
-    // Minifies only if it's a JavaScript file
-    .pipe(gulpIf('*.js', uglify()))
-    .pipe(gulp.dest('dist'))
+gulp.task('uglify', function (cb) {
+  pump([
+        gulp.src('app/js/*.js'),
+        uglify({
+          mangle: false
+        }),
+        gulp.dest('dist/js')
+    ],
+    cb
+  );
 });
 
 
-
-var cssnano = require('gulp-cssnano');
-
-gulp.task('useref', function(){
-  return gulp.src('app/*.html')
-    .pipe(useref())
-    .pipe(gulpIf('*.js', uglify()))
-    // Minifies only if it's a CSS file
-    .pipe(gulpIf('*.css', cssnano()))
-    .pipe(gulp.dest('dist'))
-});
-
-
-
+//DO NOT TOUCH!!
 var imagemin = require('gulp-imagemin');
-
-gulp.task('images', function(){
-  return gulp.src('app/images/**/*.+(png|jpg|gif|svg)')
-  .pipe(imagemin())
-  .pipe(gulp.dest('dist/images'))
-});
-
-
-
 var cache = require('gulp-cache');
 
 gulp.task('images', function(){
@@ -59,7 +39,8 @@ gulp.task('images', function(){
 });
 
 
+
 gulp.task('fonts', function() {
   return gulp.src('app/fonts/**/*')
   .pipe(gulp.dest('dist/fonts'))
-})
+});
