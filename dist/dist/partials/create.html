@@ -1,0 +1,52 @@
+<div id="top-wrapper">
+  <img src="../images/icon_final.svg" id="snips-logo">
+  <img src="../images/icon_final-dash.svg" id="snips-dash">
+  <img src="../images/icon_final-dash.svg" id="snips-dash2">
+  <a href="#/snips"><button type="button" class="nav-btn" id="snips-nav-btn">Your snippets</button></a>
+</div>
+
+<form ng-controller="snipCreatorCtrl">
+	<div id="create-formwrapper">
+		<!-- auto-complete calls the custom auto-complete directive. ui-items tells autocomplete where to get the data (from the allcountries variable set in autocomplete.js file) -->
+    <label>Country:</label>
+		<input auto-complete ui-items="allcountries" ng-model="countrySearch" placeholder="Country"/>
+
+    <label for="month">Travel Date:</label>
+		<select name = "Month" id="Month" ng-model="month">
+			<option value = "" selected></option>
+			<option value = "January">January</option>
+			<option value = "February">February</option>
+			<option value = "March">March</option>
+			<option value = "April">April</option>
+			<option value = "May">May</option>
+			<option value = "June">June</option>
+			<option value = "July">July</option>
+			<option value = "August">August</option>
+			<option value = "September">September</option>
+			<option value = "October">October</option>
+			<option value = "November">November</option>
+			<option value = "December">December</option>
+		</select>
+
+    <input type ="number" id="year" ng-model="year" placeholder="2016"/>
+
+	</br></br>
+
+    <label>Favorite Place:</label>
+		<input type="text" ng-model="faveplace" placeholder="Favorite Place"/>
+
+    <label>Favorite Restaurant:</label>
+		<input type="text" ng-model="faverestaurant" placeholder="Favorite Restaurant"/>
+
+		<label>Favorite Food:</label>
+		<input type="text" ng-model="favefood" placeholder="Favorite Food"/>
+
+		<label for="rating">Trip Rating: 1 to 5 (1 = Terrible, 5 = Awesome)</label>
+		<input type="number" ng-model="rating" min="1" max="5" placeholder="3"/>
+
+		<label for="note">Travel Note:</label>
+		<textarea maxlength="650" ng-model="note" placeholder="Type a note about your trip here"/></textarea>
+
+		<button ng-click ="retrieveCountryData()" id="create-btn">Snip!</button>
+	</div>
+</form>

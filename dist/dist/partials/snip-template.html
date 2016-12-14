@@ -1,0 +1,43 @@
+<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+  <div class="flipper">
+    <div class="front {{country.region}}">
+      <h1 class="country-name">{{country.name}}</h1>
+      <h2 class="country-nativename">({{country.nativeName}})</h2>
+      <div class="img-container">
+        <img class="land-icon" ng-src="{{country.icon}}">
+        <img class="snip-flag" ng-src="{{country.flag}}" alt="flag of {{country.name}}">
+      </div>
+      <ul>
+        <li><span class="property-name">Capital: </span>{{country.capital}}</li>
+		<li><span class="property-name">Language: </span>{{country.language}}</li>
+        <li><span class="property-name">Population: </span> {{country.population}}</li>
+		<li><span class="property-name">Travel Date: </span> {{country.date}}</li>
+      </ul>
+    </div>
+    <div class="back {{country.region}}">
+      <h1 class="country-name">{{country.name}}</h1>
+      <ul>
+        <li>
+          <span class="property-name">Favorite Place: </span>
+          <span class="user-data">{{country.favePlace}}</span>
+        </li>
+        <li>
+          <span class="property-name">Favorite Restaurant: </span> <span class="user-data">{{country.faveRestaurant}}</span>
+        </li>
+        <li>
+          <span class="property-name">Favorite Food: </span>
+          <span class="user-data">{{country.faveFood}}</span>
+        </li>
+        <li>
+          <span class="property-name">Travel Note: </span>
+          <span class="user-data">{{country.note}}</span>
+        </li>
+        <li>
+          <span class="property-name">Rating: </span>
+          <span class="user-data">{{country.rating}}</span>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
