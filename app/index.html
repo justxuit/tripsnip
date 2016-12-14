@@ -2,8 +2,8 @@
 <html ng-app="tripSnipModule">
 <head>
 	 <meta charset="utf-8">
-	 <!--build:css css/styles.min.css-->
 	 <link rel="stylesheet" type="text/css" href="js/lib/jquery-ui/jquery-ui.min.css">
+	 <!--build: bundle.css-->
 	 <link rel="stylesheet" type="text/css" href="css/reset.css">
 	 <link rel="stylesheet" type="text/css" href="css/main.css">
 	 <!--endbuild-->
@@ -11,7 +11,7 @@
 </head>
 
 <body>
-	
+
   <div id="view" ng-view="">
   LOADING...
   </div>
@@ -31,7 +31,7 @@
 		</div>
 	</footer>
 
-<!--build:js js/main.min.js -->
+<!--scripts -->
 <script src="js/lib/jquery-1.11.1.js"></script>
 <script src="js/lib/jquery-ui/jquery-ui.min.js"></script>
 <script src="js/lib/angular.min.js"></script>
@@ -50,7 +50,6 @@
   js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
   fjs.parentNode.insertBefore(js, fjs);
 	}(document, 'script', 'facebook-jssdk'));</script>
-
 <!-- endbuild -->
 </body>
 </html>
