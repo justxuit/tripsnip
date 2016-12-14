@@ -6,7 +6,7 @@ gulp.task('cssmin', function () {
     gulp.src('app/**/*.css')
         .pipe(cssmin())
         .pipe(rename({suffix: '.min'}))
-        .pipe(gulp.dest('dist'));
+        .pipe(gulp.dest('docs'));
 });
 
 
@@ -20,7 +20,7 @@ gulp.task('uglify', function (cb) {
         uglify({
           mangle: false
         }),
-        gulp.dest('dist/js')
+        gulp.dest('docs/js')
     ],
     cb
   );
@@ -37,18 +37,18 @@ gulp.task('images', function(){
   .pipe(cache(imagemin({
       interlaced: true
     })))
-  .pipe(gulp.dest('dist/images'))
+  .pipe(gulp.dest('docs/images'))
 });
 
 
 
 gulp.task('fonts', function() {
   return gulp.src('app/fonts/**/*')
-  .pipe(gulp.dest('dist/fonts'))
+  .pipe(gulp.dest('docs/fonts'))
 });
 
 
 gulp.task('partials', function() {
   return gulp.src('app/partials/**/*')
-  .pipe(gulp.dest('dist/partials'))
+  .pipe(gulp.dest('docs/partials'))
 });
