@@ -192,6 +192,12 @@ a {
   box-shadow: 1px 1px 0 0 #888888;
 }
 
+#create-nav-btn {
+  background-color: #00AEDB;
+  border: 4px solid #004163;
+  box-shadow: 3px 3px 2px #004163;
+}
+
 #snips-wrapper {
   width: 90%;
   display: block;
