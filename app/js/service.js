@@ -67,7 +67,8 @@ app.factory("snippetStorage", function(){ //creates factory
   function getSnip(){
     return snippetArray;
   };
-
+  
+//this is necessary to get the information from the service
   return {
     setSnip: setSnip,
     getSnip: getSnip

@@ -1,8 +1,9 @@
 (function (){
 var app = angular.module('tripSnipModule'); //attaches the module created in app.js to this file.
 
+	//creating controller
 app.controller("snipCreatorCtrl", function ($scope, $http, snippetStorage, $location){
-	//retrieve user-entered data
+	//retrieve user-entered data & API (when user clicks snip this function runs)
 	$scope.retrieveCountryData = function(){
 		//console.log($scope.countrySearch);
 		//console.log($scope.note);
@@ -119,11 +120,8 @@ app.controller("snipCreatorCtrl", function ($scope, $http, snippetStorage, $loca
 					//send all data to the service factory
 					snippetStorage.setSnip(fullData);
 
-					// //clearing data from user inputs
-					// $scope.countrySearch = "";
-					// $scope.note = "";
 
-					//directs to snippets page
+					//directs to snippets page after user clicks Snip!
 					$location.path("/snips");
 
 				//if error in country search box
