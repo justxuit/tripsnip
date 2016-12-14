@@ -1,1 +1,0 @@
-!function(){var app=angular.module("tripSnipModule");app.controller("snipGetterCtrl",function($scope,snippetStorage){var countryArray=snippetStorage.getSnip();$scope.countryArray=countryArray,console.log(countryArray);var totalCountriesVisited=countryArray.length;$scope.totalCountriesVisited=totalCountriesVisited,console.log(totalCountriesVisited)})}();
