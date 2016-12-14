@@ -6,7 +6,7 @@ gulp.task('cssmin', function () {
     gulp.src('app/css/*.css')
         .pipe(cssmin())
         .pipe(rename({suffix: '.min'}))
-        .pipe(gulp.dest('docs'));
+        .pipe(gulp.dest('docs/css'));
 });
 
 
