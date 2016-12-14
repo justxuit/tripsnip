@@ -2,22 +2,15 @@
 <html ng-app="tripSnipModule">
 <head>
 	 <meta charset="utf-8">
-	 <!--build:css css/styles.min.css-->
+	 	<!--css-->
 	 <link rel="stylesheet" type="text/css" href="js/lib/jquery-ui/jquery-ui.min.css">
-	 <link rel="stylesheet" type="text/css" href="css/bundle.css">
+	 <link rel="stylesheet" type="text/css" href="css/reset.css">
+	 <link rel="stylesheet" type="text/css" href="css/main.css">
 	 <!--endbuild-->
 	 <title>Travel. Collect. Share. Compare.</title>
 </head>
 
 <body>
-	<div id="fb-root"></div>
-	<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
-  fjs.parentNode.insertBefore(js, fjs);
-	}(document, 'script', 'facebook-jssdk'));</script>
 
   <div id="view" ng-view="">
   LOADING...
@@ -38,7 +31,7 @@
 		</div>
 	</footer>
 
-<!--build:js js/main.min.js -->
+<!--scripts -->
 <script src="js/lib/jquery-1.11.1.js"></script>
 <script src="js/lib/jquery-ui/jquery-ui.min.js"></script>
 <script src="js/lib/angular.min.js"></script>
@@ -50,5 +43,17 @@
 <script src="js/service.js"></script>
 <script src="js/autocomplete.js"></script>
 <!-- endbuild -->
+
+<div id="fb-root"></div>
+<script>
+	(function(d, s, id) {
+	var js, fjs = d.getElementsByTagName(s)[0];
+	if (d.getElementById(id)) return;
+	js = d.createElement(s); js.id = id;
+	js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+	fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+</script>
+
 </body>
 </html>
