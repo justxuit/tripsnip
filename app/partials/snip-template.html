@@ -10,10 +10,22 @@
         <img class="snip-flag" ng-src="{{country.flag}}" alt="Flag of {{country.name}}">
       </div>
       <ul>
-        <li><span class="property-name">Capital: </span>{{country.capital}}</li>
-		<li><span class="property-name">Language: </span>{{country.language}}</li>
-        <li><span class="property-name">Population: </span> {{country.population}}</li>
-		<li><span class="property-name">Travel Date: </span> {{country.date}}</li>
+        <li>
+          <span class="property-name">Capital: </span>
+          <span class="api-data">{{country.capital}}</span>
+        </li>
+    		<li>
+          <span class="property-name">Language: </span>
+          <span class="api-data">{{country.language}}</span>
+        </li>
+        <li>
+          <span class="property-name">Population: </span>
+          <span class="api-data">{{country.population}}</span>
+        </li>
+    		<li>
+          <span class="property-name">Travel Date: </span>
+          <span class="api-data">{{country.date}}</span>
+        </li>
       </ul>
     </div>
     <div class="back {{country.region}}">
@@ -38,7 +50,7 @@
           <span class="property-name">Rating: </span>
           <span class="user-data">{{country.rating}}</span>
         </li>
-        
+
       </ul>
     </div>
   </div>

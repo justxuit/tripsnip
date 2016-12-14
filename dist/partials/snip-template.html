@@ -1,11 +1,13 @@
 <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
   <div class="flipper">
     <div class="front {{country.region}}">
+
+      <!--this is getting the information from the factory-->
       <h1 class="country-name">{{country.name}}</h1>
       <h2 class="country-nativename">({{country.nativeName}})</h2>
       <div class="img-container">
         <img class="land-icon" ng-src="{{country.icon}}">
-        <img class="snip-flag" ng-src="{{country.flag}}" alt="flag of {{country.name}}">
+        <img class="snip-flag" ng-src="{{country.flag}}" alt="Flag of {{country.name}}">
       </div>
       <ul>
         <li><span class="property-name">Capital: </span>{{country.capital}}</li>
