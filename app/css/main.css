@@ -531,6 +531,10 @@ figcaption {
     display: block;
 	margin: auto;
   }
+  
+  .front, .back {
+	  min-height: 325px;
+  }
 }
 
  @media (max-width: 900px) {
