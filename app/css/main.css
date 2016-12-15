@@ -356,7 +356,6 @@ ul {
 	border-radius: 0px 24px;
 }
 
-
 .Africa {
   border-color: rgb(244, 120, 53);
   background-color: rgba(244, 120, 53, 0.55);
@@ -543,36 +542,42 @@ figcaption {
 	}
  }
 
-	@media (max-width: 750px) {
-		label {
-			font-size: 1em;
-		}
+@media (max-width: 750px) {
+	label {
+		font-size: 1em;
+	}
 
-		select, input#year{
-			display: block;
-		}
+	select, input#year{
+		display: block;
+	}
 
-		#create-btn {
-			width: 30%;
-			font-size: 1em;
-		}
+	#create-btn {
+		width: 30%;
+		font-size: 1em;
+	}
 
-		.nav-btn {
-			padding: 2px;
-			font-size: 1em;
-			width: 10em;
-		}
+	.nav-btn {
+		padding: 2px;
+		font-size: 1em;
+		width: 10em;
+	}
+}
 
- }
+@media (max-width: 715px) {
+ 
+	 input#year {
+		 width: 50%;
+	 }
+}
 
- @media (max-width: 650px) {
+@media (max-width: 650px) {
 
 	 #top-wrapper {
 		 height: 80px;
 	 }
 
 	 #snips-logo {
-		 width: 40%;
+		 width: 25%;
 		 margin-top: 10px;
 	 }
 
@@ -596,6 +601,12 @@ figcaption {
 	 input, input#year, select {
 		 width: 100%;
 	 }
+}
 
+@media (max-width: 650px) {
 
- }
+	 #snips-logo {
+		 width: 30%;
+		 margin-top: 5px;
+	 }
+}
