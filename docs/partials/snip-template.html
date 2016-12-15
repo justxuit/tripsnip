@@ -5,11 +5,13 @@
       <!--this is getting the information from the factory-->
       <h1 class="country-name">{{country.name}}</h1>
       <h2 class="country-nativename">({{country.nativeName}})</h2>
+
       <div class="img-container">
         <img class="land-icon" ng-src="{{country.icon}}">
         <img class="snip-flag" ng-src="{{country.flag}}" alt="Flag of {{country.name}}">
       </div>
       <ul>
+        <li><span class="property-name">Region: </span>{{country.region}}</li>
         <li><span class="property-name">Capital: </span>{{country.capital}}</li>
 		<li><span class="property-name">Language: </span>{{country.language}}</li>
         <li><span class="property-name">Population: </span> {{country.population}}</li>
