@@ -423,7 +423,7 @@ input {
   display: block;
   font-family: moo;
   font-size: 1.5em;
-  width: 60%;
+  width: 70%;
   padding: 1%;
   border-radius: 4px;
   margin: 2%;
@@ -591,6 +591,10 @@ figcaption {
 	 
 	 #splash-btn {
 		 font-size: 1em;
+	 }
+	 
+	 input, input#year, select {
+		 width: 100%;
 	 }
 
 
