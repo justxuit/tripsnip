@@ -32,6 +32,7 @@
 body {
   background-color: #e2dfdb;
   font-family: sans-serif;
+  margin-bottom: 100px;
 }
 
 footer {
@@ -118,7 +119,7 @@ a {
   margin: auto;
   padding: 1em;
   line-height: 120%;
-  font-size: 0.9em;
+  font-size: 1em;
   font-weight: bold;
   letter-spacing: 1.5px;
 }
@@ -129,7 +130,7 @@ a {
   margin: auto;
   padding: 1em;
   line-height: 120%;
-  font-size: 0.9em;
+  font-size: 1em;
   font-weight: bold;
   letter-spacing: 1.5px;
 }
@@ -209,6 +210,21 @@ a {
   display: block;
   margin: auto;
 }
+
+#snips-countrytotal {
+  display: block;
+  width: 25%;
+  margin: 50px auto 25px auto;
+  padding: 1%;
+  text-align: center;
+  font-size: 1.75vw;
+  font-family: dosis-bold;
+  letter-spacing: 2px;
+  word-spacing: 4px;
+  border-top: 3px solid #3f3b8a;
+  border-bottom: 3px solid #3f3b8a;
+}
+
 /*////END snips.html////*/
 /**/
 /**/
@@ -299,19 +315,6 @@ ul {
   padding: 0 20px;
 }
 
-#snips-countrytotal {
-  display: block;
-  width: 25%;
-  margin: 5% auto 5% auto;
-  padding: 1%;
-  text-align: center;
-  font-size: 1.75vw;
-  font-family: dosis-bold;
-  letter-spacing: 2px;
-  word-spacing: 4px;
-  border-top: 3px solid #3f3b8a;
-  border-bottom: 3px solid #3f3b8a;
-}
 /*////////////////////flipper animation/////////////*/
 
 /* flip the pane on hover */
