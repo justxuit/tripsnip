@@ -206,7 +206,7 @@ a {
 }
 
 #snips-wrapper {
-  width: 90%;
+  width: 98%;
   display: block;
   margin: auto;
 }
@@ -234,11 +234,11 @@ a {
 .flip-container {
   display: inline-block;
   width: 25%;
-  padding: 1%;
   margin: 2% 4%;
   vertical-align: top;
   min-height: 350px;
-	perspective: 1000px;
+  perspective: 1000px;
+  min-width: 300px;
 }
 
 .country-name {
@@ -293,14 +293,12 @@ li {
   display: inline-block;
   margin: 2%;
   vertical-align: middle;
-  /*padding: 0 5px 0 0;*/
 }
 
 .snip-flag {
   width: 55%;
   min-height: 50%;
   margin: 2%;
-  /*padding: 0 0 0 5px;*/
   border-radius: 4px;
   display: inline-block;
   vertical-align: middle;
@@ -526,13 +524,6 @@ figcaption {
 }
 /*////END about.html////*/
 
-@media (max-width: 1200px) {
-  .flip-container {
-    display: block;
-	margin: auto;
-  }
-}
-
  @media (max-width: 900px) {
 	#footer-left, #footer-mid,  #footer-right{
 	  display: block;
@@ -541,6 +532,17 @@ figcaption {
 	  width: 100%;
 	}
  }
+
+ @media (max-width: 850px) {
+  .flip-container {
+    display: block;
+	margin: auto;
+  }
+  
+  .front, .back {
+	  min-height: 325px;
+  }
+}
 
 @media (max-width: 750px) {
 	label {
