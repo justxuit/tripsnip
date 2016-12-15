@@ -583,6 +583,15 @@ figcaption {
 	 .nav-btn {
 		 margin-top: 10px;
 	 }
+	 
+	 .splash-blurb, .splash-blurb-two {
+		 font-size: .8em;
+		 width: 60%;
+	 }
+	 
+	 #splash-btn {
+		 font-size: 1em;
+	 }
 
 
  }
